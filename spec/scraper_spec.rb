@@ -1,7 +1,6 @@
 require_relative '../scraper'
 
 describe '#fetch_players_urls' do
-
   # Note: this test may break because players top order might change!
   it 'returns an array of players' do
     urls = fetch_players_urls
