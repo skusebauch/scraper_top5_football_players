@@ -24,7 +24,7 @@ describe '#scrape_player' do
       name: 'Kylian Mbappé',
       birthday: '20.12.1998',
       nation: 'Frankreich',
-      value: '180,00'
+      value: '180,00 Mio. €'
     }
     expect(player).to eq(expected)
   end

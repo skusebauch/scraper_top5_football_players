@@ -13,6 +13,15 @@ def fetch_players_urls
 end
 
 def scrape_player(url)
+  doc = Nokogiri::HTML(open(url).read)
+  name = doc.search('h1').text
+  birthday = doc.search("//span[@itemprop = 'birthDate']").text.match(/(?<date>(\d{2}.){2}\d{4})/)
+  nation = doc.search("//span[@itemprop = 'nationality']").text
+  value = doc.search('.dataMarktwert a').text.match(/(?<money>(\d{3}|\d{2}),\d{2}\s\w{3}.\s€)/)
+    {
+      name: name,
+      birthday: birthday['date'],
+      nation: nation,
+      value: value['money']
+    }
 end
-
-

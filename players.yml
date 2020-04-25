@@ -1,0 +1,21 @@
+---
+- :name: Kylian Mbappé
+  :birthday: 20.12.1998
+  :nation: Frankreich
+  :value: 180,00 Mio. €
+- :name: Raheem Sterling
+  :birthday: '08.12.1994'
+  :nation: England
+  :value: 128,00 Mio. €
+- :name: Neymar
+  :birthday: 05.02.1992
+  :nation: Brasilien
+  :value: 128,00 Mio. €
+- :name: Sadio Mané
+  :birthday: 10.04.1992
+  :nation: Senegal
+  :value: 120,00 Mio. €
+- :name: Mohamed Salah
+  :birthday: 15.06.1992
+  :nation: Ägypten
+  :value: 120,00 Mio. €
